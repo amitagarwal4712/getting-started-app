@@ -10,6 +10,7 @@ on:
 permissions:
   contents: read
   actions: write
+  checks: write
   
 jobs:
   test:
@@ -152,4 +153,4 @@ jobs:
           name: |
             build
             docker
-            diagram
+            aagarw33-diagram
