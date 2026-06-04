@@ -108,11 +108,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: "📦 load tag"
-        run: |
-          docker load --input /tmp/docker.tar
-          docker image ls -a
-
       - name: "📂 download build artifacts"
         uses: actions/download-artifact@v4
         with:
