@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon -L src/index.js",
-    "build": "vite build"
+    "dev": "nodemon -L src/index.js"
   },
   "dependencies": {
     "express": "^5.2.1",
