@@ -9,6 +9,10 @@ on:
     - cron: '56 5 * * 1'
   workflow_call:
 
+permissions:
+  contents: read
+  security-events: read
+  
 jobs:
   analyze:
     name: Analyze
