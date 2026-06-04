@@ -86,11 +86,16 @@ jobs:
           should_push: false
           root_path: "src/"
 
-      - name: "📂 production artifacts"
-        uses: actions/upload-artifact@v4
-        with:
-          name: build
-          path: build
+    # - name: "📂 production artifacts"
+        # uses: actions/upload-artifact@v4
+        # with:
+          # name: build
+          # path: build
+
+      - name: Create deployment package
+        run: |
+          mkdir build
+          cp -r src package.json package-lock.json build/
 
   release:
     environment:
