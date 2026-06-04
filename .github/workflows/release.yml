@@ -127,7 +127,7 @@ jobs:
 
       - name: "🚀 release"
         id: semantic-release
-        uses: amitagarwal4712/getting-started-app/semantic-release-conventional-config@v4
+        uses: cycjimmy/semantic-release-conventional-config@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
