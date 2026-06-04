@@ -10,7 +10,7 @@ on:
 jobs:
   test:
     name: Test and lint
-    uses: open-sauced/open-sauced/.github/workflows/development.yml@main
+    uses: getting-started-app/getting-started-app/.github/workflows/development.yml@main
 
   docker:
     name: Build container
@@ -132,7 +132,7 @@ jobs:
 
       - name: "🚀 release"
         id: semantic-release
-        uses: open-sauced/semantic-release-conventional-config@v3
+        uses: getting-started-app/semantic-release-conventional-config@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
