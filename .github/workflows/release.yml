@@ -114,11 +114,11 @@ jobs:
           # name: build
           # path: build
 
-      - name: "📂 download diagram artifacts"
-        uses: actions/download-artifact@v4
-        with:
-          name: aagarw33diagram
-          path: .
+      # - name: "📂 download diagram artifacts"
+        # uses: actions/download-artifact@v4
+        # with:
+          # name: aagarw33diagram
+          # path: .
 
       - name: "🚀 release"
         id: semantic-release
