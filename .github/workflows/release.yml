@@ -86,9 +86,6 @@ jobs:
           should_push: false
           root_path: "src/"
 
-      - name: "🚀 static app"
-        run: npm run build
-
       - name: "📂 production artifacts"
         uses: actions/upload-artifact@v4
         with:
