@@ -78,14 +78,14 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: "📊 repository visualizer"
-        id: aagarw33-diagram
+        id: aagarw33diagram
         uses: githubocto/repo-visualizer@0.7.1
         with:
           excluded_paths: "node_modules,build,.storybook,.netlify,.github,npm-shrinkwrap.json"
-          output_file: "public/aagarw33-diagram.svg"
+          output_file: "public/aagarw33diagram.svg"
           should_push: false
           root_path: "src/"
-          artifact_name: "aagarw33-diagram"
+          artifact_name: "aagarw33diagram"
 
       - name: "🚀 static app"
         run: npm run build
@@ -132,7 +132,7 @@ jobs:
       - name: "📂 download diagram artifacts"
         uses: actions/download-artifact@v3
         with:
-          name: aagarw33-diagram
+          name: aagarw33diagram
           path: .
 
       - name: "🚀 release"
@@ -153,4 +153,4 @@ jobs:
           name: |
             build
             docker
-            aagarw33-diagram
+            aagarw33diagram
