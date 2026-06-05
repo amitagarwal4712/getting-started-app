@@ -140,15 +140,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  cleanup:
-    name: Cleanup actions
-    needs:
-      - release
-    runs-on: ubuntu-latest
-    steps:
-      - name: "♻️ remove build artifacts"
-        uses: geekyeggo/delete-artifact@v1
-        with:
-           name: |
+  # cleanup:
+    # name: Cleanup actions
+    # needs:
+      # - release
+    # runs-on: ubuntu-latest
+    # steps:
+      # - name: "♻️ remove build artifacts"
+        # uses: geekyeggo/delete-artifact@v1
+        # with:
+           # name: |
              # build
-             docker
+             # docker
