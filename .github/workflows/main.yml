@@ -27,8 +27,11 @@ jobs:
       - name: "📦 install dependencies"
         uses: bahmutov/npm-install@v1
 
-      - name: "📦 build getting-started-app"
-        run: npx build-getting-started-app
+      # - name: "📦 build getting-started-app"
+        # run: npx build-getting-started-app
+
+      - name: Verify app
+         run: npm test --if-present
 
       - name: "🚀 deploy static"
         uses: peaceiris/actions-gh-pages@v3
