@@ -146,12 +146,9 @@ jobs:
       - release
     runs-on: ubuntu-latest
     steps:
-      - name: Delete artifacts
-        uses: actions/delete-artifact@v1
-        
-      # - name: "♻️ remove build artifacts"
-        # uses: geekyeggo/delete-artifact@v1
-        # with:
-          # name: |
-            # build
-            # docker
+      - name: "♻️ remove build artifacts"
+          uses: geekyeggo/delete-artifact@v1
+         with:
+           name: |
+             # build
+             docker
