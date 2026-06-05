@@ -1,6 +1,10 @@
 name: Publish getting-started-app if changed
 
 on:
+  workflow_run:
+    workflows: ["release"]
+    types:
+      - completed
   push:
     branches:
       - main
