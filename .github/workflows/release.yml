@@ -104,11 +104,23 @@ jobs:
       - docker
       - build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    
     steps:
       - name: "☁️ checkout repository"
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
 
       # - name: "📂 download build artifacts"
         # uses: actions/download-artifact@v4
