@@ -31,7 +31,7 @@ jobs:
         # run: npx build-getting-started-app
 
       - name: Verify app
-         run: npm test --if-present
+        run: npm test --if-present
 
       - name: "🚀 deploy static"
         uses: peaceiris/actions-gh-pages@v3
