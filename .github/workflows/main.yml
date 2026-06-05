@@ -5,8 +5,11 @@ on:
     branches:
       - main
     paths:
-      - spec/**
       - src/**
+      - spec/**
+      - Dockerfile
+      - package.json
+      
   workflow_call:
 
 jobs:
